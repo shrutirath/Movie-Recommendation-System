@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block body %}
+<div class="container">
+{% for i in range(9) %}
+
+  <a href="#" class="item tilt-poster">
+    <div class="poster" style="background-image: url('{{ poster[i] }}')">
+    </div>
+    <p>{{ name[i] }}</p>
+  </a>
+
+
+{% endfor%}
+
+  </div>
+{% endblock %}
