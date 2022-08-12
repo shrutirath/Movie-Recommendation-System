@@ -10,7 +10,7 @@ similarity = pickle.load(open('similarity.pkl', 'rb'))
 @app.route('/')
 def hello():
     return render_template("index.html")
-    # return "Akash"
+    
 
 
 def recommend(movies):
